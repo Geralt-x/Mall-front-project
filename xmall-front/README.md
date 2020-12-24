@@ -1,12 +1,8 @@
 ## XMall-Front
 ### 基于Vue开发的XMall商城前台页面
-### [宣传视频](https://www.bilibili.com/video/av23121122/)
-- 作者亲自制作 [点我观看](https://www.bilibili.com/video/av23121122/)
-### 项目已部署，在线Demo
-- 前台商城：http://xmall.exrick.cn/
-- 后台管理系统：http://xmadmin.exrick.cn/
-### 感谢 [yucccc](https://github.com/yucccc) 的开源 [vue-mall](https://github.com/yucccc/vue-mall) 项目提供前端页面及框架支持
-### 后端全部重新开发接口，实现后台系统管理，后端接口项目请跳转至 [xmall](https://github.com/Exrick/xmall) 项目仓库查看
+
+###  [yucccc](https://github.com/yucccc) 的开源 [vue-mall](https://github.com/yucccc/vue-mall) 项目提供前端页面及框架支持
+
 ### 新增与优化
 - [x] 优化页脚、增加商品搜索框组件
 - [x] 优化登录注册界面
@@ -16,7 +12,6 @@
 - [x] 优化订单详情，实现查看订单进度，可对订单进行处理
 - [x] 实现生成订单接口、优化地址管理编辑选择
 - [x] 实现查看个人订单分页
-- [x] 接入[XPay个人免签收款支付系统](https://github.com/Exrick/xpay)
 - [x] 首页升级！重构首页，后台可配置，包括3D轮播图
 - [x] 新增分类查看品牌周边等
 - [极验验证码移除文档](https://github.com/Exrick/xmall/wiki/%E6%9E%81%E9%AA%8C%E7%A7%BB%E9%99%A4%E6%96%87%E6%A1%A3)
@@ -62,27 +57,4 @@
 - 商城前台端口默认9999 http://localhost:9999
 ## 部署
 - 先后执行命令 `npm install` 、 `npm run build` 将打包生成的 `dist` 静态文件放置服务器中，若使用Nginx等涉及跨域请配置路由代理
-### 技术疑问交流
-- QQ交流群 `475743731(付费)`，可获取各项目详细图文文档、疑问解答 [![](http://pub.idqqimg.com/wpa/images/group.png)](http://shang.qq.com/wpa/qunwpa?idkey=7b60cec12ba93ebed7568b0a63f22e6e034c0d1df33125ac43ed753342ec6ce7)
-- 免费交流群 `562962309` [![](http://pub.idqqimg.com/wpa/images/group.png)](http://shang.qq.com/wpa/qunwpa?idkey=52f6003e230b26addeed0ba6cf343fcf3ba5d97829d17f5b8fa5b151dba7e842)
 
-- 个人博客：[http://blog.exrick.cn](http://blog.exrick.cn)
-
-### 开源协议
-- 请遵循原作者MIT开源协议
-
-### 作者其他项目推荐
-- [X-Boot前后端分离开发平台](https://github.com/Exrick/x-boot)
-
-    ![](https://i.loli.net/2018/07/21/5b52e274d2085.png)
-
-- [XPay个人免签收款支付系统](https://github.com/Exrick/xpay) 无需挂机App 自动回调
-
-- [XMall微信小程序APP前端 现已开源！](https://github.com/Exrick/xmall-weapp)
-    
-    [![WX20190924-234416@2x.png](https://s2.ax1x.com/2019/10/06/ucEsBD.md.png)](https://www.bilibili.com/video/av70226175)
-
-- 个人机器学习笔记
-    - [Machine-Learning](https://github.com/Exrick/Machine-Learning)
-
-### [捐赠](http://xmall.exrick.cn)
