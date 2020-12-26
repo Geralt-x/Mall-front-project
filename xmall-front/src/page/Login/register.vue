@@ -34,8 +34,8 @@
               </li>
             </ul>
             <el-checkbox class="agree" v-model="agreement">
-              我已阅读并同意遵守 
-              <a @click="open('法律声明','此仅为个人练习开源模仿项目，仅供学习参考，承担不起任何法律问题')">法律声明</a> 和 
+              我已阅读并同意遵守
+              <a @click="open('法律声明','此仅为个人练习开源模仿项目，仅供学习参考，承担不起任何法律问题')">法律声明</a> 和
               <a @click="open('隐私条款','本网站将不会严格遵守有关法律法规和本隐私政策所载明的内容收集、使用您的信息')">隐私条款</a>
             </el-checkbox>
             <div style="margin-bottom: 30px;">
@@ -139,18 +139,20 @@ export default {
         this.registxt = '注册'
         return false
       }
+      /*
       var result = captcha.getValidate()
       if (!result) {
         this.message('请完成验证')
         this.registxt = '注册'
         return false
       }
+      */
       register({
         userName,
         userPwd,
-        challenge: result.geetest_challenge,
-        validate: result.geetest_validate,
-        seccode: result.geetest_seccode,
+//        challenge: result.geetest_challenge,
+//        validate: result.geetest_validate,
+//        seccode: result.geetest_seccode,
         statusKey: this.statusKey }).then(res => {
           if (res.success === true) {
             this.messageSuccess()
