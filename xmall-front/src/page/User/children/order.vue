@@ -118,7 +118,7 @@
       },
       getOrderStatus (status) {
         if (status === '1') {
-          return '支付审核中'
+          return '订单处理中'
         } else if (status === '2') {
           return '待发货'
         } else if (status === '3') {

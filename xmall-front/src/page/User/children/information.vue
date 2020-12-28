@@ -165,7 +165,7 @@
             })
           })
         } else {
-          this.messageFail('别玩我啊 先选照骗')
+          this.messageFail('请先选择照片')
         }
       },
       editAvatar () {

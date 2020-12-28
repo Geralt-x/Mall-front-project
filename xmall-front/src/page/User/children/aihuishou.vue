@@ -5,7 +5,7 @@
         <div style="padding: 100px 0;text-align: center">
           <img src="/static/images/smile.png">
           <br>
-          <span class="support">请问你拿什么和我换新</span>
+          <span class="support">抱歉，商品库存不足，无法进行更换</span>
         </div>
       </div>
     </y-shelf>

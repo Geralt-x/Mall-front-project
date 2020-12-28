@@ -43,7 +43,7 @@
               <li class="status-title"><h3>订单状态：已支付，待系统审核确认</h3></li>
             </ul>
             <p class="realtime">
-              <span>请耐心等待审核，审核结果将发送到您的邮箱，并且您所填写的捐赠数据将显示在捐赠表中。</span>
+              <span>请耐心等待，商品订单将会尽快处理</span>
             </p>
           </div>
           <div class="status-now" v-if="orderStatus === -1 || orderStatus === 6">
@@ -272,7 +272,7 @@
     border: 1px solid #EBEBEB;
     margin-left: -80px;
   }
-  
+
   img {
     display: block;
     @include wh(80px);
