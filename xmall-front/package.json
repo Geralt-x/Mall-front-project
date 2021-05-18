@@ -2,7 +2,7 @@
   "name": "vue-node-mall",
   "version": "1.0.0",
   "description": "A Vue.js project",
-  "author": "二次开发:Exrick 原:yucccc <13450003105@163.com>",
+  "author": "Geralt",
   "private": true,
   "scripts": {
     "dev": "node build/dev-server.js",
@@ -15,6 +15,7 @@
     "element-ui": "^1.4.13",
     "geetest3": "^1.0.0",
     "gitment": "0.0.3",
+    "node-sass": "^4.14.1",
     "vue": "^2.5.16",
     "vue-content-placeholders": "^0.2.1",
     "vue-cookie": "^1.1.4",

@@ -44,7 +44,7 @@
 
     <y-shelf title="支付订单">
       <div slot="content">
-        <!--        <div class="box-inner order-info">
+<!--                <div class="box-inner order-info">
                   <h3>提交订单成功，请填写捐赠信息</h3>
                   <p class="payment-detail">请在 <span>24 小时内</span>完成支付，超时订单将自动取消。</p>
                   <p class="payment-detail">我们不会在您完成支付后的 72 小时内发货，您的支付将用作捐赠</p>
@@ -90,7 +90,7 @@
                                       @btnClick="paySuc()"
                             ></y-button>-->
               <em><y-button :text="payNow" :classStyle="main-btn"
-                        style="width: 120px;height: 40px;font-size: 18px;font-weight:bolder;line-height: 38px;color: red"
+                        style="width: 120px;height: 40px;font-size: 22px;font-weight:bolder;line-height: 38px;color: orangered"
                         @btnClick="paySuc()">
               </y-button></em>
             </div>
@@ -128,7 +128,7 @@
         orderId: '',
         type: '',
         moneySelect: '1.00',
-        isCustom: false,
+        isCustom: true,
         maxLength: 30
       }
     },
@@ -158,9 +158,11 @@
         })
       },
       changeSelect (v) {
+        // 如果不是用户自定义金额
         if (v !== 'custom') {
           this.money = v
         } else {
+          // 用户自定义金额
           this.isCustom = true
           this.money = ''
         }
@@ -205,8 +207,9 @@
           payType: this.type
         }).then(res => {
           if (res.success === true) {
-            setStore('setTime', 90)
-            setStore('price', this.money)
+            // 剩余支付时间：10min=600s
+            setStore('setTime', 600)
+            setStore('price', this.orderTotal)
             setStore('isCustom', this.isCustom)
             if (this.payType === 1) {
               this.$router.push({path: '/order/alipay'})

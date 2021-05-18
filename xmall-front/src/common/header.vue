@@ -115,7 +115,7 @@
                       </div>
                     </div>
                     <div v-show="!totalNum" style="height: 313px;text-align: center" class="cart-con">
-                      <p>您的购物车竟然是空的!</p>
+                      <p>您的购物车是空的!</p>
                     </div>
                   </div>
                 </div>

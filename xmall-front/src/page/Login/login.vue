@@ -3,7 +3,7 @@
     <div class="wrapper">
       <div class="dialog dialog-shadow" style="display: block; margin-top: -362px;">
         <div class="title">
-          <h4>使用 XMall 账号 登录官网</h4>
+          <h4>使用 Mall 账号 登录官网</h4>
         </div>
         <div v-if="loginPage" class="content">
           <ul class="common-form">
@@ -17,16 +17,16 @@
                 <input type="password" v-model="ruleForm.userPwd" @keyup.enter="login" placeholder="密码">
               </div>
             </li>
-            <li>
+<!--            <li>
               <div id="captcha">
                 <p id="wait">正在加载验证码...</p>
               </div>
-            </li>
+            </li>-->
             <li style="text-align: right" class="pr">
               <el-checkbox class="auto-login" v-model="autoLogin">记住密码</el-checkbox>
               <!-- <span class="pa" style="top: 0;left: 0;color: #d44d44">{{ruleForm.errMsg}}</span> -->
-              <a href="javascript:;" class="register" @click="toRegister">注册 XMall 账号</a>
-              <a style="padding: 1px 0 0 10px" @click="open('找回密码','请联系作者邮箱找回密码或使用测试账号登录：test | test')">忘记密码 ?</a>
+              <a href="javascript:;" class="register" @click="toRegister">注册 Mall 账号</a>
+              <a style="padding: 1px 0 0 10px" @click="open('找回密码','请联系客服找回密码！')">忘记密码 ?</a>
             </li>
           </ul>
           <!--登陆-->
@@ -96,7 +96,7 @@ export default {
     },
     messageSuccess () {
       this.$message({
-        message: '恭喜您，注册成功！赶紧登录体验吧',
+        message: '恭喜您，注册成功！',
         type: 'success'
       })
     },
@@ -223,7 +223,7 @@ export default {
     this.getRemembered()
     this.login_addCart()
     this.init_geetest()
-    this.open('登录提示', '测试体验账号密码：test | test')
+    // this.open('登录提示', '测试体验账号密码：test | test')
   },
   components: {
     YFooter,

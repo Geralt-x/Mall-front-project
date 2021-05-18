@@ -3,7 +3,7 @@
     <div class="wrapper">
       <div class="dialog dialog-shadow" style="display: block; margin-top: -362px;">
         <div class="registered">
-          <h4>注册 XMall 账号</h4>
+          <h4>注册 Mall 账号</h4>
           <div class="content" style="margin-top: 20px;">
             <ul class="common-form">
               <li class="username border-1p">
@@ -27,11 +27,11 @@
                          placeholder="重复密码">
                 </div>
               </li>
-              <li>
+<!--              <li>
                 <div id="captcha">
                   <p id="wait">正在加载验证码...</p>
                 </div>
-              </li>
+              </li>-->
             </ul>
             <el-checkbox class="agree" v-model="agreement">
               我已阅读并同意遵守
@@ -51,7 +51,7 @@
             <ul class="common-form pr">
               <!-- <li class="pa" style="left: 0;top: 0;margin: 0;color: #d44d44">{{registered.errMsg}}</li> -->
               <li style="text-align: center;line-height: 48px;margin-bottom: 0;font-size: 12px;color: #999;">
-                <span>如果您已拥有 XMall 账号，则可在此</span>
+                <span>如果您已拥有 Mall 账号，则可在此</span>
                 <a href="javascript:;"
                    style="margin: 0 5px"
                    @click="toLogin">登陆</a>
@@ -105,7 +105,7 @@ export default {
     },
     messageSuccess () {
       this.$message({
-        message: '恭喜您，注册成功！赶紧登录体验吧',
+        message: '恭喜您，注册成功！',
         type: 'success'
       })
     },

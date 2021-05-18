@@ -52,8 +52,8 @@
         </ul>
 
         <ul class="c4">
-          <li class="tel"><a class="c5" href="http://wpa.qq.com/msgrd?v=3&uin=804625792&site=qq&menu=yes" target="_blank">025-452523</a></li>
-          <li class="time">周一至周日 10:00-23:00 </li>
+          <li class="tel"><a class="c5" href="http://wpa.qq.com/msgrd?v=3&uin=804625792&site=qq&menu=yes" target="_blank">官方热线：400-688-95533</a></li>
+          <li class="time">周一至周日 9:00-18:00 </li>
           <li class="online">
             <y-button text="在线帮助" class="button" @btnClick="open3"></y-button>
           </li>
